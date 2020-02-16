@@ -1,5 +1,5 @@
 ---
-- hosts: "Odoo Servers"
+- hosts: odoosvr01 odoosvr02
   become: yes
   serial: 1
   tasks:
