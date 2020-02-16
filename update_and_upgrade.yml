@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: Odoo Servers
   become: yes
   serial: 1
   tasks:
