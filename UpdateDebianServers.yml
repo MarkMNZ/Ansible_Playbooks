@@ -1,0 +1,11 @@
+---
+- hosts: DebianBasedServers
+  become: yes
+  serial: 1
+  tasks:
+  - name: Update and upgrade
+    apt:
+      update_cache: yes
+      upgrade: 'yes'
+      
+      cache_valid_time: 86400
